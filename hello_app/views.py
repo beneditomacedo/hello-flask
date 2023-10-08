@@ -3,10 +3,8 @@ This module contains a Flask application that returns a greeting message.
 """
 import re
 from datetime import datetime
-from flask import Flask
 from flask import render_template
-
-app = Flask(__name__)
+from . import app
 
 @app.route('/')
 def home():
